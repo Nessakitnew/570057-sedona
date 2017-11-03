@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+
+    <header class="main-header">
+      <nav class="main-navigation">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/index-logo.svg" alt="Логотип City of Sedona">
+          </a>
+          <ul class="site-navigation">
+            <li><a href="info.html">Информация</a></li>
+            <li><a href="library.html">Фото и Видео</a></li>
+            <li><a href="map.html">Карта Штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <main class="hotels">
+      <h1 class="visually-hidden">Поиск размещения</h1>
+      <section class="filter">
+        <h2 class="visually-hidden">Критерии поиска</h2>
+<!--Фон CSS-->
+<!--Здесь будет форма, даже 3-->
+        <ul class="setting">
+          <li class="infrastructure">Инфраструктура
+            <ul class="infr">
+              <li class="filer-option"><input type="checkbox" id="infr1" name="pool" value="pool" checked><label for="infr1">Бассейн</label></li>
+              <li class="filer-option"><input type="checkbox" id="infr2" name="parking" value="parking"><label for="infr2">Парковка</label></li>
+              <li class="filer-option"><input type="checkbox" id="infr3" name="wi-fi" value="wi-fi"><label for="infr3">Wi-Fi</label></li>
+            </ul>
+          </li>
+          <li class="housing-type">Тип жилья
+            <ul class="type">
+              <li class="filer-option"><input type="checkbox" id="type1" name="hotel" value="hotel" checked><label for="type1">Отель</label></li>
+              <li class="filer-option"><input type="checkbox" id="type2" name="motel" value="motel" checked><label for="type2">Мотель</label></li>
+              <li class="filer-option"><input type="checkbox" id="type3" name="apartments" value="apartments" checked><label for="type3">Апартаменты</label></li>
+            </ul>
+          </li>
+          <li>Стоимость в сутки (Р)
+          <form class="price">
+            <table class="price-table">
+              <tr>
+                <th>От 0</th>
+                <th>До 3000</th>
+              </tr>
+            </table>
+<!--Бегунок с ценой-->
+            <button type="submit">Показать</button>
+          </form>
+        </ul>
+      </section>
+
+      <section class="results">
+        <h2 class="visually-hidden">Результаты поиска</h2>
+          <p class="results-title">Найдено</p>
+          <p> <span class="results-number">3</span></p>
+          <p class="sorting">Сортировка:</p>
+            <ul class="sorting-list">
+              <li><a href="pricing.hotels.html">По цене</a></li>
+              <li><a href="housing.hotels.html">По типу</a></li>
+              <li><a href="ranking.hotels.html">По рейтингу</a></li>
+            </ul>
+            <div class="sorting-controls">
+              <a><!--Кнопка вперед?--></a>
+              <a><!--Кнопка назад?--></a>
+            </div>
+      </section>
+
+      <section>
+        <h2 class="visually-hidden">Варианты размещения</h2>
+        <ul class="sorting-item">
+          <li class="item">
+            <div class="item-description">
+              <img src="img.hotel-1.jpg" alt="Amara Resort & SPA">
+              <p class="item-title">Amara Resort & SPA</p>
+              <table>
+                <tr>
+                  <th>Гостиница</th>
+                  <th>От 4000 Р.</th>
+              </table>
+              <aside>
+                <p class="raiting-stars"><span><!--Звезды Картинка?--></span></p>
+                <p class="raiting">Рейтинг:8,5</P>
+              </aside>
+              <input type="button" class="hotel-info" value="Подробнее"><a href="hotel-info.html"></a>
+              <input type="button" class="book" value="Забронировать"><a href="hotel-book.html"></a>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item-description">
+              <img src="img.hotel-2.jpg" alt="Desert Quail Inn">
+              <p class="item-title">Desert Quail Inn</p>
+              <table>
+                <tr>
+                  <th>Мотель</th>
+                  <th>От 3000 Р.</th>
+              </table>
+              <aside>
+                <p class="raiting-stars"><span><!--Звезды Картинка?--></span></p>
+                <p class="raiting">Рейтинг:8,9</P>
+              </aside>
+              <input type="button" class="hotel-info" value="Подробнее"><a href="hotel-info.html"></a>
+              <input type="button" class="book" value="Забронировать"><a href="hotel-book.html"></a>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item-description">
+              <img src="img.hotel-3.jpg" alt="Villas at Poco Diablo">
+              <p class="item-title">Villas at Poco Diablo</p>
+              <table>
+                <tr>
+                  <th>Апартаменты</th>
+                  <th>От 2000 Р.</th>
+              </table>
+              <aside>
+                <p class="raiting-stars"><span><!--Звезды Картинка?--></span></p>
+                <p class="raiting">Рейтинг:9,2</P>
+              </aside>
+              <input type="button" class="hotel-info" value="Подробнее"><a href="hotel-info.html"></a>
+              <input type="button" class="book" value="Забронировать"><a href="hotel-book.html"></a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+    <footer class="main-footer">
+        <p class="invitation">#visitsedona</p>
+
+      <div class="social">
+        <ul>
+          <li><a class="social-button" href="#">Twitter</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">Youtube</a></li>
+        </ul>
+      </div>
+
+      <p class="copy-right">Website by
+        <a class="design" href="https://htmlacademy.ru">
+          <img src="img/design-logo.svg" alt="Логотип HTML Academy">
+        </a>
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
