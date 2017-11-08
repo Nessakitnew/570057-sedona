@@ -9,12 +9,12 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/index-logo.svg" alt="Логотип City of Sedona">
+          <img src="img/logo-sedona.png" alt="Логотип City of Sedona">
         </a>
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
+          <li><a href="#info">Информация</a></li>
           <li><a href="library.html">Фото и Видео</a></li>
-          <li><a href="map.html">Карта Штата</a></li>
+          <li><a href="#map">Карта Штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
@@ -24,7 +24,7 @@
       <h1 class="visually-hidden">Город Седона</h1>
 
       <div class="welcome">
-        <h2 class="visually-hidden">Преимущества поездки в Седону</h2>
+        <h2 class="visually-hidden" id="info">Преимущества поездки в Седону</h2>
         <!--Фон CSS, картинки Welcome, Sedona, Because-->
         <p class="welcome-promo">Седона – небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="welcome-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -37,7 +37,7 @@
       </section>
 
       <div class="feature-illustration">
-        <img src="img/index-city.svg" alt="Настоящий городок">
+        <img src="img/sedonacity-index.jpg" alt="Настоящий городок">
       </div>
 
       <section class="services">
@@ -58,7 +58,7 @@
       </section>
 
       <div class="feature-illustration">
-        <img src="img/index-city.svg" alt="Настоящий городок">
+        <img src="img/devilroad-index.jpg" alt="Мост Дьявола">
       </div>
 
       <section class="feature illustrated">
@@ -97,6 +97,11 @@
       <div class="map">
         <div class="map-canvas"></div>
       </div>
+
+      <section>
+        <h2 class="visually-hidden" id="map">Карта Штата</h2>
+        <img src="img/map-index.jpg">
+      </section>
     </main>
 
     <footer class="main-footer">
@@ -105,15 +110,27 @@
 
       <div class="social">
         <ul>
-          <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">Youtube</a></li>
+          <li>
+            <a class="social-button" href="#">
+              <img src="img/twitter.svg" alt="Twitter">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <img src="img/fb-icon.svg" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <img src="img/youtube.svg" alt="Youtube">
+            </a>
+          </li>
         </ul>
       </div>
 
       <p class="copy-right">Website by
         <a class="design" href="https://htmlacademy.ru">
-          <img src="img/design-logo.svg" alt="Логотип HTML Academy">
+          <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy">
         </a>
       </p>
     </footer>
