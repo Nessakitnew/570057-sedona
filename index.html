@@ -88,19 +88,30 @@
       </section>
 
       <section class="form">
-        <h2 class="form-title">Заинтересовались?</h2>
+        <p class="question">Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки, <br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-<!--Здесь будет форма-->
+        <h2 class="form-title">Поиск гостиницы в Седоне</h2>
+        <form class="hotel-search" action="hotels.html" method="get">
+          <label for="date-in">Дата заезда:</label>
+          <input id="date-in" type="text" placeholder="24 апреля 2017" required>
+          <label for="date-out">Дата выезда:</label>
+          <input id="date-out" type="text" placeholder="4 июля 2017" required>
+          <label for="counter-adults">Взрослые:</label>
+          <input class="counter-adults-down" type="button" value="-">
+          <input id="counter-adults" type="text" value="2">
+          <input class="counter-adults-up" type="button" value="+">
+          <label for="counter-children">Дети:</label>
+          <input class="counter-children-down" type="button" value="-">
+          <input id="counter-children" type="text" value="0">
+          <input class="counter-children-up" type="button" value="+">
+          <button class="search-button" type="submit">Найти</button>
+        </form>
       </section>
-
-      <div class="map">
-        <div class="map-canvas"></div>
-      </div>
 
       <section>
         <h2 class="visually-hidden" id="map">Карта Штата</h2>
-        <img src="img/map-index.png">
+        <img src="img/map-index.png" alt="Карта Штата">
       </section>
     </main>
 
