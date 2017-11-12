@@ -93,25 +93,33 @@
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <h2 class="form-title">Поиск гостиницы в Седоне</h2>
         <form class="hotel-search" action="hotels.html" method="get">
-          <label for="date-in">Дата заезда:</label>
-          <input id="date-in" type="text" placeholder="24 апреля 2017" required>
-          <label for="date-out">Дата выезда:</label>
-          <input id="date-out" type="text" placeholder="4 июля 2017" required>
-          <label for="counter-adults">Взрослые:</label>
-          <input class="counter-adults-down" type="button" value="-">
-          <input id="counter-adults" type="text" value="2">
-          <input class="counter-adults-up" type="button" value="+">
-          <label for="counter-children">Дети:</label>
-          <input class="counter-children-down" type="button" value="-">
-          <input id="counter-children" type="text" value="0">
-          <input class="counter-children-up" type="button" value="+">
+          <p>
+            <label for="date-in">Дата заезда:</label>
+            <input id="date-in" type="text" placeholder="24 апреля 2017" required>
+          </p>
+          <p>
+            <label for="date-out">Дата выезда:</label>
+            <input id="date-out" type="text" placeholder="4 июля 2017" required>
+          </p>
+          <p>
+            <label for="counter-adults">Взрослые:</label>
+            <input class="counter-adults-down" type="button" value="-">
+            <input id="counter-adults" type="text" value="2">
+            <input class="counter-adults-up" type="button" value="+">
+          </p>
+          <p>
+            <label for="counter-children">Дети:</label>
+            <input class="counter-children-down" type="button" value="-">
+            <input id="counter-children" type="text" value="0">
+            <input class="counter-children-up" type="button" value="+">
+          </p>
           <button class="search-button" type="submit">Найти</button>
         </form>
       </section>
 
       <section>
         <h2 class="visually-hidden" id="map">Карта Штата</h2>
-        <img src="img/map-index.png" alt="Карта Штата">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A216135177d2605a7af1503cf870363f0d0c2467c47027f87da0f1020286e673c&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
       </section>
     </main>
 
@@ -140,7 +148,7 @@
       </div>
 
       <p class="copy-right">Website by
-        <a class="design" href="https://htmlacademy.ru">
+        <a class="design" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy">
         </a>
       </p>
