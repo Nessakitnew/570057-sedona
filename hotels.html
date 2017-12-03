@@ -46,7 +46,7 @@
             </li>
             <li class="filter">Стоимость в сутки (Р):
               <div class="price-range">
-                <p class="p">От 0</p><p>До 3000</p>
+                <p>От 0</p><p>До 3000</p>
               </div>
               <input type="range" name="range" min="0" max="3500" step="10">
               <button class="results-btn" type="submit">Показать</button>
@@ -57,22 +57,25 @@
 
       <section class="results">
         <h2 class="visually-hidden">Результаты поиска</h2>
-        <p class="results-title">Найдено:<output name="results-number" id="results-number"> 3</output></p>
-        <p class="sorting">Сортировка:</p>
-        <ul class="sorting-list">
-          <li><a id="active" href="pricing.hotels.html">По цене</a></li>
-          <li><a href="housing.hotels.html">По типу</a></li>
-          <li><a href="ranking.hotels.html">По рейтингу</a></li>
-        </ul>
-        <div class="sorting-controls">
-          <a class="sorting-up" href="#"></a>
-          <a class="sorting-down" href="#"></a>
-        </div>
-      </section>
 
-      <section>
-        <h2 class="visually-hidden">Варианты размещения</h2>
+        <div class="results-controls">
+          <p class="results-title">Найдено:<output name="results-number" id="results-number"> 3</output></p>
+          <p class="sorting">Сортировка:</p>
+
+          <ul class="sorting-list">
+            <li><a id="active" href="pricing.hotels.html">По цене</a></li>
+            <li><a href="housing.hotels.html">По типу</a></li>
+            <li><a href="ranking.hotels.html">По рейтингу</a></li>
+          </ul>
+
+          <div class="sorting-controls">
+            <a class="sorting-up" href="#"></a>
+            <a class="sorting-down" href="#"></a>
+          </div>
+        </div>
+
         <ul class="sorting-item">
+
           <li class="item">
             <img class="hotel-photo" src="img/amararesortspa.jpg" alt="Изображение Amara Resort & SPA">
             <div class="hotel-description">
@@ -88,8 +91,12 @@
                 </div>
               </div>
             </div>
-            <p class="raiting">Рейтинг: 8,5</p>
+            <div class="raiting">
+              <div class="four-stars"></div>
+              <p>Рейтинг: 8,5</p>
+            </div>
           </li>
+
           <li class="item">
             <img class="hotel-photo"  src="img/desertquailinn-hotels.jpg" alt="Изображение Desert Quail Inn">
             <div class="hotel-description">
@@ -105,8 +112,12 @@
                 </div>
               </div>
             </div>
-            <p class="raiting">Рейтинг: 8,9</p>
+            <div class="raiting">
+              <div class="three-stars"></div>
+              <p>Рейтинг: 8,9</p>
+            </div>
           </li>
+
           <li class="item">
             <img class="hotel-photo" src="img/villasatpocodiablo-hotels.jpg" alt="Изображение Villas at Poco Diablo">
             <div class="hotel-description">
@@ -122,23 +133,28 @@
                 </div>
               </div>
             </div>
-            <p class="raiting">Рейтинг: 9,2</p>
+            <div class="raiting">
+              <div class="two-stars"></div>
+              <p>Рейтинг: 9,2</p>
+            </div>
           </li>
         </ul>
+
       </section>
     </main>
 
     <footer class="main-footer">
       <p class="hashtag">#visitsedona</p>
 
-      <div class="social-block">
-        <a class="social twitter" href="#"></a>
-        <a class="social facebook" href="#"></a>
-        <a class="social youtube" href="#"></a>
+      <div>
+        <a class="social" href="#"><div class="twitter"></div></a>
+        <a class="social" href="#"><div class="facebook"></div></a>
+        <a class="social" href="#"><div class="youtube"></div></a>
       </div>
 
       <p class="copyright">Website by
-        <a class="design" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+        <a class="design" href="https://htmlacademy.ru/intensive/htmlcss">
+        </a>
       </p>
     </footer>
 

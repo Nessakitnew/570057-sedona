@@ -38,12 +38,13 @@
       </div>
 
       <section class="features-ill">
-        <div class="feature blue">
+        <div class="feature">
           <h3>Настоящий городок</h3>
           <span class="number">–№1–</span>
           <p>Седона – не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <img class="illustration" src="img/sedonacity-index.jpg" alt="Настоящий городок">
+        <div class="illustration-1">
+        </div>
       </section>
 
       <section class="services">
@@ -64,12 +65,13 @@
       </section>
 
       <section class="features-ill reverse">
-        <div class="feature blue">
+        <div class="feature">
           <h3>Там есть Мост Дьявола</h3>
           <span class="number">–№2–</span>
           <p>Да, по нему можно пройтись! Если конечно вы осмелитесь</p>
         </div>
-        <img class="illustration" src="img/devilroad-index.jpg" alt="Мост Дьявола">
+        <div class="illustration-2">
+        </div>
       </section>
 
       <section class="features">
@@ -96,27 +98,43 @@
         <p class="question">Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки, <br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <h2 class="form-title">Поиск гостиницы в Седоне</h2>
       </div>
 
       <section class="form">
+        <h2 class="form-title">Поиск гостиницы в Седоне</h2>
         <form class="hotel-search" action="hotels.html" method="get">
-          <p class="date">
-            <label for="date-in">Дата заезда:</label>
-            <input id="date-in" type="text" placeholder="  24 апреля 2017  " required><br>
-            <label for="date-out">Дата выезда:</label>
-            <input id="date-out" type="text" placeholder="  4 июля 2017  " required>
-          </p>
-          <p class="counter">
-            <label for="counter-adults">Взрослые:</label>
-            <input class="counter-adults-down" type="button" value="-">
-            <input id="counter-adults" type="text" value="2" size="1">
-            <input class="counter-adults-up" type="button" value="+">
-            <label for="counter-children">Дети:</label>
-            <input class="counter-children-down" type="button" value="-">
-            <input id="counter-children" type="text" value="0" size="1">
-            <input class="counter-children-up" type="button" value="+">
-          </p>
+          <div class="date">
+            <p class="in">
+              <label for="date-in">Дата заезда:</label>
+              <input id="date-in" type="text" placeholder="  24 апреля 2017  " required>
+              <div class="calendar">
+              </div>
+            </p>
+            <p class="out">
+              <label for="date-out">Дата выезда:</label>
+              <input id="date-out" type="text" placeholder="  4 июля 2017  " required>
+              <div class="calendar">
+              </div>
+            </p>
+          </div>
+          <div>
+            <p>
+              <label for="counter-adults">Взрослые:</label>
+              <div class="counter">
+                <input class="counter-adults-down" type="button" value="-">
+                <input id="counter-adults" type="text" value="2" size="1">
+                <input class="counter-adults-up" type="button" value="+">
+              </div class="counter">
+            </p>
+            <p>
+              <label for="counter-children">Дети:</label>
+              <div class="counter">
+                <input class="counter-children-down" type="button" value="-">
+                <input id="counter-children" type="text" value="0" size="1">
+                <input class="counter-children-up" type="button" value="+">
+              </div>
+            </p>
+          </div>
           <button class="search-button" type="submit">Найти</button>
         </form>
       </section>
@@ -130,10 +148,10 @@
     <footer class="main-footer">
       <p class="hashtag">#visitsedona</p>
 
-      <div class="social-block">
-        <a class="social twitter" href="#"></a>
-        <a class="social facebook" href="#"></a>
-        <a class="social youtube" href="#"></a>
+      <div>
+        <a class="social" href="#"><div class="twitter"></div></a>
+        <a class="social" href="#"><div class="facebook"></div></a>
+        <a class="social" href="#"><div class="youtube"></div></a>
       </div>
 
       <p class="copyright">Website by
