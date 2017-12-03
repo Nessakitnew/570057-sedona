@@ -39,7 +39,7 @@
             </li>
             <li class="filter">Тип жилья:
               <ul>
-                <li class="filter-option"><input class="checkbox" type="checkbox" id="type1" name="hotel" value="hotel" checked><label for="type1"> Отель</label></li>
+                <li class="filter-option"><input class="checkbox" type="checkbox" id="type1" name="hotel" value="hotel" checked><label for="type1"> Гостиница</label></li>
                 <li class="filter-option"><input class="checkbox" type="checkbox" id="type2" name="motel" value="motel" checked><label for="type2"> Мотель</label></li>
                 <li class="filter-option"><input class="checkbox" type="checkbox" id="type3" name="apartments" value="apartments" checked><label for="type3"> Апартаменты</label></li>
               </ul>
@@ -51,6 +51,7 @@
               <div class="range">
                 <div class="left handle">
                 </div>
+                <div class="filled-range"></div>
                 <div class="right handle">
                 </div>
               </div>
@@ -62,7 +63,7 @@
 
       <section>
         <h2 class="visually-hidden">Результаты поиска</h2>
-        <p class="results">
+        <div class="results">
           <p class="results-title">Найдено:<output name="results-number" id="results-number"> 3</output></p>
           <p>Сортировка:</p>
 
@@ -74,9 +75,9 @@
 
           <div class="sorting-controls">
             <a class="sorting-up" href="#"></a>
-            <a class="sorting-down" href="#"></a>
+            <a id="on" class="sorting-down" href="#"></a>
           </div>
-        </p>
+        </div>
 
         <ul class="sorting-item">
 
@@ -95,9 +96,7 @@
                 </div>
               </div>
             </div>
-            <div class="raiting four-stars">
-              <p>Рейтинг: 8,5</p>
-            </div>
+            <div class="raiting four-stars">Рейтинг: 8,5</div>
           </li>
 
           <li class="item">
@@ -115,9 +114,7 @@
                 </div>
               </div>
             </div>
-            <div class="raiting three-stars">
-              <p>Рейтинг: 8,9</p>
-            </div>
+            <div class="raiting three-stars">Рейтинг: 8,9</div>
           </li>
 
           <li class="item">
@@ -135,9 +132,7 @@
                 </div>
               </div>
             </div>
-            <div class="raiting two-stars">
-              <p>Рейтинг: 9,2</p>
-            </div>
+            <div class="raiting two-stars">Рейтинг: 9,2</div>
           </li>
         </ul>
 
