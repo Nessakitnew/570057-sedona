@@ -46,21 +46,25 @@
             </li>
             <li class="filter">Стоимость в сутки (Р):
               <div class="price-range">
-                <p>От 0</p><p>До 3000</p>
+                <p class="from">От 0</p><p>До 3000</p>
               </div>
-              <input type="range" name="range" min="0" max="3500" step="10">
+              <div class="range">
+                <div class="left handle">
+                </div>
+                <div class="right handle">
+                </div>
+              </div>
               <button class="results-btn" type="submit">Показать</button>
             </li>
           </ul>
         </form>
       </section>
 
-      <section class="results">
+      <section>
         <h2 class="visually-hidden">Результаты поиска</h2>
-
-        <div class="results-controls">
+        <p class="results">
           <p class="results-title">Найдено:<output name="results-number" id="results-number"> 3</output></p>
-          <p class="sorting">Сортировка:</p>
+          <p>Сортировка:</p>
 
           <ul class="sorting-list">
             <li><a id="active" href="pricing.hotels.html">По цене</a></li>
@@ -72,7 +76,7 @@
             <a class="sorting-up" href="#"></a>
             <a class="sorting-down" href="#"></a>
           </div>
-        </div>
+        </p>
 
         <ul class="sorting-item">
 
@@ -91,8 +95,7 @@
                 </div>
               </div>
             </div>
-            <div class="raiting">
-              <div class="four-stars"></div>
+            <div class="raiting four-stars">
               <p>Рейтинг: 8,5</p>
             </div>
           </li>
@@ -112,8 +115,7 @@
                 </div>
               </div>
             </div>
-            <div class="raiting">
-              <div class="three-stars"></div>
+            <div class="raiting three-stars">
               <p>Рейтинг: 8,9</p>
             </div>
           </li>
@@ -133,8 +135,7 @@
                 </div>
               </div>
             </div>
-            <div class="raiting">
-              <div class="two-stars"></div>
+            <div class="raiting two-stars">
               <p>Рейтинг: 9,2</p>
             </div>
           </li>

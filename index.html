@@ -103,37 +103,31 @@
       <section class="form">
         <h2 class="form-title">Поиск гостиницы в Седоне</h2>
         <form class="hotel-search" action="hotels.html" method="get">
-          <div class="date">
-            <p class="in">
-              <label for="date-in">Дата заезда:</label>
-              <input id="date-in" type="text" placeholder="  24 апреля 2017  " required>
-              <div class="calendar">
-              </div>
-            </p>
-            <p class="out">
-              <label for="date-out">Дата выезда:</label>
-              <input id="date-out" type="text" placeholder="  4 июля 2017  " required>
-              <div class="calendar">
-              </div>
-            </p>
+          <div class="date in">
+            <label for="date-in">Дата заезда:</label>
+            <input id="date-in" type="text" placeholder="  24 апреля 2017  " required>
+            <div class="calendar"></div>
           </div>
-          <div>
-            <p>
-              <label for="counter-adults">Взрослые:</label>
-              <div class="counter">
-                <input class="counter-adults-down" type="button" value="-">
-                <input id="counter-adults" type="text" value="2" size="1">
-                <input class="counter-adults-up" type="button" value="+">
-              </div class="counter">
-            </p>
-            <p>
-              <label for="counter-children">Дети:</label>
-              <div class="counter">
-                <input class="counter-children-down" type="button" value="-">
-                <input id="counter-children" type="text" value="0" size="1">
-                <input class="counter-children-up" type="button" value="+">
-              </div>
-            </p>
+          <div class="date out">
+            <label for="date-out">Дата выезда:</label>
+            <input id="date-out" type="text" placeholder="  4 июля 2017  " required>
+            <div class="calendar"></div>
+          </div>
+
+          <div class="guests">
+            <label for="counter-adults">Взрослые:</label>
+            <div class="counter">
+              <input class="counter-adults-down" type="button" value="-">
+              <input id="counter-adults" type="text" value="2" size="1">
+              <input class="counter-adults-up" type="button" value="+">
+            </div>
+            <label for="counter-children">Дети:</label>
+            <div class="counter">
+              <input class="counter-children-down" type="button" value="-">
+              <input id="counter-children" type="text" value="0" size="1">
+              <input class="counter-children-up" type="button" value="+">
+            </div>
+            </div>
           </div>
           <button class="search-button" type="submit">Найти</button>
         </form>
@@ -141,7 +135,9 @@
 
       <section>
         <h2 class="visually-hidden" id="map">Карта Штата</h2>
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A216135177d2605a7af1503cf870363f0d0c2467c47027f87da0f1020286e673c&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+        <div class="maps">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A216135177d2605a7af1503cf870363f0d0c2467c47027f87da0f1020286e673c&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
       </section>
     </main>
 
