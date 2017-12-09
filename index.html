@@ -12,7 +12,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/logo-sedona.png" alt="Логотип City of Sedona">
+          <img src="img/logo-sedona.png" width="140px" height="70px" alt="Логотип City of Sedona">
         </a>
         <ul class="site-navigation">
           <li><a href="#info">Информация</a></li>
@@ -39,9 +39,9 @@
 
       <section class="features-ill">
         <div class="feature">
-          <h3>Настоящий городок</h3>
-          <span class="number">–№1–</span>
-          <p>Седона – не аттракцион для туристов, там течет своя жизнь</p>
+          <h3>Настоящий<br>городок</h3>
+          <span class="number">– №1 –</span>
+          <p>Седона – не аттракцион для туристов,<br>там течет своя жизнь</p>
         </div>
         <div class="illustration-1">
         </div>
@@ -66,8 +66,8 @@
 
       <section class="features-ill reverse">
         <div class="feature">
-          <h3>Там есть Мост Дьявола</h3>
-          <span class="number">–№2–</span>
+          <h3>Там есть<br>Мост Дьявола</h3>
+          <span class="number">– №2 –</span>
           <p>Да, по нему можно пройтись! Если конечно вы осмелитесь</p>
         </div>
         <div class="illustration-2">
@@ -77,18 +77,18 @@
       <section class="features">
         <ul class="features-list">
           <li class="feature">
-            <h3>Небольшая площадь</h3>
-            <span class="number">–№3–</span>
-            <p>Все достопримечательности находятся очень близко</p>
+            <h3>Небольшая<br>площадь</h3>
+            <span class="number">– №3 –</span>
+            <p>Все достопримечательности<br>находятся очень близко</p>
           </li>
           <li class="feature">
-            <h3>Красивая дорога</h3>
-            <span class="number">–№4–</span>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <h3>Красивая<br>дорога</h3>
+            <span class="number">– №4 –</span>
+            <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
           </li>
           <li class="feature">
-            <h3>Мало туристов</h3>
-            <span class="number">–№5–</span>
+            <h3>Мало<br>туристов</h3>
+            <span class="number">– №5 –</span>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>
@@ -101,8 +101,8 @@
       </div>
 
       <section class="form">
-        <h2 class="form-title">Поиск гостиницы в Седоне</h2>
-        <form class="hotel-search" action="hotels.html" method="get">
+        <h2 class="form-title"> <a href="#">Поиск гостиницы в Седоне</a></h2>
+        <form class="hotel-search" action="echo.htmlacademy.ru" method="post">
           <div class="date in">
             <label for="date-in">Дата заезда:</label>
             <input id="date-in" type="text" placeholder="  24 апреля 2017  " required>
@@ -117,26 +117,26 @@
           <div class="guests">
             <label for="counter-adults">Взрослые:</label>
             <div class="counter">
-              <input class="counter-adults-down" type="button" value="-">
+              <input class="counter-down" type="button" value="-">
               <input id="counter-adults" type="text" value="2" size="1">
-              <input class="counter-adults-up" type="button" value="+">
+              <input class="counter-up" type="button" value="+">
             </div>
             <label for="counter-children">Дети:</label>
             <div class="counter">
-              <input class="counter-children-down" type="button" value="-">
+              <input class="counter-down" type="button" value="-">
               <input id="counter-children" type="text" value="0" size="1">
-              <input class="counter-children-up" type="button" value="+">
-            </div>
+              <input class="counter-up" type="button" value="+">
             </div>
           </div>
           <button class="search-button" type="submit">Найти</button>
         </form>
       </section>
 
-      <section>
-        <h2 class="visually-hidden" id="map">Карта Штата</h2>
+      <section id="map">
+        <h2 class="visually-hidden">Карта Штата</h2>
         <div class="maps">
           <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A216135177d2605a7af1503cf870363f0d0c2467c47027f87da0f1020286e673c&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+        <img class="img-map" src="img/map-index.png" height="473px" alt="Карта Штата">
         </div>
       </section>
     </main>
@@ -155,6 +155,6 @@
         </a>
       </p>
     </footer>
-
+    <script src="js/index.js"></script>
   </body>
 </html>
