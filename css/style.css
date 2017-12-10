@@ -50,6 +50,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+  max-width: 100%
 }
 
 /* HEADER */
@@ -249,7 +250,7 @@ a {
   background: url("../img/frame-index.png");
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 100%;
+  background-size: 100% 60px;
 }
 
 .welcome-promo {
