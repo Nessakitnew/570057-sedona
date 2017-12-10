@@ -5,3 +5,5 @@ link.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.toggle("modal");
 });
+
+popup.classList.add("modal");
