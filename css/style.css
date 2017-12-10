@@ -1005,6 +1005,4 @@ border-bottom: 1px solid rgb(229, 229, 229);
 
 .modal {
   display: none;
-  animation-name: bounce;
-  transition-duration: 2s;
 }
