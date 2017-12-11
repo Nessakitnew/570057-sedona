@@ -365,6 +365,7 @@ font-weight: bold;
 
 .illustration-1 {
   width: 66.66%;
+  background-color: rgb(129, 179, 210);
   background-image: url("../img/sedonacity-index.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -373,6 +374,7 @@ font-weight: bold;
 
 .illustration-2 {
   width: 66.66%;
+  background-color: rgb(129, 179, 210);
   background-image: url("../img/devilroad-index.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -693,25 +695,39 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 .price-range {
   margin: 11px 0;
-  padding: 7px;
+  padding: 5px;
   width: 300px;
   display: flex;
   border: 2px solid white;
   border-radius: 3px;
+}
+
+.price-range input {
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  vertical-align: middle;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  color: inherit;
+}
+
+.price-range label{
+  padding-left: 30px;
+  vertical-align: middle;
+
   font-size: 14px;
   font-weight: normal;
 }
 
-.price-range p {
-  margin: 0;
-  padding: 0;
+.price-range div {
   width: 50%;
   text-align: center;
-
-  font-weight: inherit;
 }
 
-.from {
+.from  {
   border-right: 2px solid white;
 }
 
@@ -725,6 +741,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 .handle {
   display: inline-block;
+  vertical-align: top;
   width: 20px;
   height: 20px;
   background-image: url("../img/filter-button.svg");

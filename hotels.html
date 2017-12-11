@@ -47,7 +47,14 @@
             </li>
             <li class="filter"><b>Стоимость в сутки (Р):</b>
               <div class="price-range">
-                <p class="from">От 0</p><p>До 3000</p>
+                <div class="from">
+                  <label for="price-range-from">От</label>
+                  <input id="price-range-from" type="number" min="0" max="3000" step="100" value="0">
+                </div>
+                <div class="to">
+                  <label for="price-range-to">До</label>
+                  <input id="price-range-to" type="number" min="0" max="3000" step="100" value="3000">
+                </div>
               </div>
               <div class="range">
                 <div class="left handle">
